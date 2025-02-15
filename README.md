@@ -15,8 +15,7 @@
 - [Docker Integration](#docker-integration)
 - [Continuous Integration (CI)](#continuous-integration-ci)
 - [Future Enhancements](#future-enhancements)
-- [License](#license)
-- [Contact](#contact)
+
 
 ---
 
