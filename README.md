@@ -56,10 +56,11 @@ This project integrates advanced CPU scheduling algorithms with modern AI techni
    ```bash
    git clone https://github.com/Taylanozveren/CPU-Project-Improved-AI-Models.git
    cd CPU-Project-Improved-AI-Models
+```bash
 
 
 A.)
-```bash
+   ```bash
 python -m venv venv
 venv\Scripts\activate
 
@@ -74,6 +75,7 @@ pip install -r requirements.txt
 
 D.)
 python main.py
+```
 
 Docker Integration
 To run the project within a Docker container:
