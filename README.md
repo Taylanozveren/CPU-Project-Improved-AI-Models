@@ -1,161 +1,98 @@
-TERM PROJECT (ADVANCED): AI-Enhanced CPU Scheduling and Optimization
-Author: Taylan Özveren
-Year: 2025
+# **TERM PROJECT (ADVANCED): AI-Enhanced CPU Scheduling and Optimization**  
 
-📌 Table of Contents
-Project Overview
-Key Features
-Technical Approach
-Project Structure
-Installation
-Usage
-Docker Integration
-Continuous Integration (CI)
-Future Enhancements
-🚀 Project Overview
-This project integrates traditional CPU scheduling algorithms with Artificial Intelligence (AI) optimization techniques to improve process scheduling in operating systems.
-
-It includes:
-
-Classical Scheduling Methods (FCFS, Round Robin, Priority Scheduling, Shortest Job First).
-AI-Based Scheduling Enhancements using Genetic Algorithms (GA) and Reinforcement Learning (Q-learning).
-Data-Driven Performance Analysis, including visualizations and performance metrics such as turnaround time, waiting time, and CPU utilization.
-Containerized Deployment using Docker for consistent execution across environments.
-Automated Testing & CI/CD using GitHub Actions to ensure reliability and performance.
-By combining AI & optimization techniques, this project enhances process scheduling strategies, making them intelligent, adaptable, and efficient.
-
-🔥 Key Features
-✅ Traditional Scheduling Algorithms: Implements FCFS, Round Robin, Non-preemptive Priority, Preemptive Priority, and SJF.
-
-✅ AI Optimization with Genetic Algorithms (GA):
-
-Single-objective GA: Minimizes average waiting time.
-Multi-objective GA: Balances waiting time and turnaround time using a weighted optimization approach.
-✅ Reinforcement Learning (Q-learning) for Scheduling:
-
-AI learns optimal scheduling strategies dynamically based on reward-based learning.
-✅ Performance Visualization:
-
-Generates Gantt charts to illustrate process execution.
-✅ CSV-Based Result Logging:
-
-Outputs performance metrics in CSV for further evaluation.
-✅ Docker Integration:
-
-Ensures consistent execution across different systems.
-✅ Automated Testing & CI/CD:
-
-GitHub Actions validates updates and prevents regressions.
-🤖 Technical Approach
-🔹 Classical Scheduling Algorithms
-This project implements various traditional CPU scheduling techniques, including:
-
-FCFS (First-Come, First-Served): Executes processes in the order they arrive.
-Round Robin (RR): Time-sliced execution for fair process scheduling.
-Non-Preemptive Priority Scheduling: Processes execute based on priority.
-Preemptive Priority Scheduling: Higher-priority processes can interrupt lower-priority processes.
-Shortest Job First (SJF): Selects the shortest burst time for better efficiency.
-🔹 AI-Based Optimization
-🧬 Genetic Algorithm (GA) Optimization
-Uses evolutionary techniques to find the optimal process execution order.
-Implements both single-objective (waiting time minimization) and multi-objective (balancing waiting & turnaround time).
-🏆 Reinforcement Learning (Q-learning) Optimization
-AI dynamically learns the best scheduling sequence.
-The Q-learning model is trained to reduce waiting time through reward-based decision-making.
-🔹 Performance Metrics & Analysis
-Average Waiting Time: Measures idle duration before process execution.
-Turnaround Time: Measures total time from arrival to completion.
-CPU Utilization: Evaluates efficiency of CPU usage.
-Throughput: Calculates the number of completed processes per unit time.
-Gantt Charts: Graphical representation of scheduling execution sequences.
-
-
-
-cpu_scheduler_project/
-├── README.md              # Project documentation and usage guide
-├── requirements.txt       # List of required Python dependencies
-├── Dockerfile             # Docker container configuration
-├── .github/workflows/ci.yml # GitHub Actions workflow for CI/CD
-├── scheduler.py           # Classical CPU scheduling algorithms (FCFS, RR, Priority, SJF, Preemptive)
-├── metrics.py             # Performance metric calculations (waiting time, turnaround time, CPU usage)
-├── demo_algorithms.py     # Scheduling demonstrations + Gantt chart visualization
-├── optimizer.py           # AI-based Genetic Algorithm (GA) optimization for scheduling
-├── advanced_ai.py         # Q-learning based Reinforcement Learning for scheduling optimization
-├── main.py                # Runs all demos, AI optimizations, and logs results
-└── results/               # Stores CSV files with performance data
-
-
-⚡ Installation
-1️⃣ Clone the Repository:
-
-
-git clone https://github.com/Taylanozveren/CPU-Project-Improved-AI-Models.git
-cd CPU-Project-Improved-AI-Models
-2️⃣ Set Up a Virtual Environment (Recommended):
-
-Windows:
-
-
-python -m venv venv
-venv\Scripts\activate
-
-
-Linux/Mac:
-
-
-python3 -m venv venv
-source venv/bin/activate
-
-3️⃣ Upgrade pip, setuptools, and weel:
-venv\Scripts\python.exe -m pip install --upgrade pip setuptools wheel
-
-4️⃣ Install Required Dependencies:
-pip install -r requirements.txt
-
-
-🛠 Usage
-Run the main script to execute scheduling algorithms, AI-based optimizations, and generate reports.
-python main.py
-
-📊 Expected Outputs:
-
-Terminal output displaying scheduling orders, performance metrics, and comparisons.
-Gantt Charts for each algorithm.
-CSV File Output: Results saved in results/final_results.csv.
-
-
-🐳 Docker Integration
-To run the project inside a Docker container for consistent execution:
-
-1️⃣ Build the Docker Image:
-docker build -t cpu_scheduler:latest .
-
-2️⃣ Run the Container:
-docker run --rm cpu_scheduler:latest
-
-🔄 Continuous Integration (CI)
-A GitHub Actions workflow (.github/workflows/ci.yml) automates dependency installation & testing on each code push.
-Ensures code stability by verifying scheduling algorithms and AI optimization models.
-
-
-🚀 Future Enhancements
-✅ Advanced Reinforcement Learning: Improve Q-learning models with deeper state-action space.
-✅ Real-Time & Multi-Core Scheduling: Extend scheduling strategies to support multi-core CPU environments.
-✅ Hybrid AI Models: Combine Genetic Algorithms & RL for intelligent process scheduling.
-✅ Cloud Integration: Deploy as a cloud-based API for dynamic scheduling optimization.
-
-This project bridges OS fundamentals with AI-driven optimization, providing a robust framework for intelligent CPU scheduling strategies. 🎯
+**Author:** Taylan Özveren  
+**Year:** 2025  
 
 ---
 
-### 🔹 **Key Improvements in this README**  
-✅ **Clearer Structure:** Organized sections with concise yet detailed explanations.  
-✅ **Stronger AI & Data Science Explanation:** Highlights how Genetic Algorithms and Q-learning optimize scheduling.  
-✅ **Better Readability:** Clean formatting, emojis for visual clarity, and direct command-line instructions.  
-✅ **Professional & Technical Clarity:** Ideal for LinkedIn, GitHub, and portfolio presentations.  
+## 📌 Table of Contents  
+- [Project Overview](#project-overview)  
+- [Key Features](#key-features)  
+- [Technical Approach](#technical-approach)  
+- [Project Structure](#project-structure)  
+- [Installation](#installation)  
+- [Usage](#usage)  
+- [Docker Integration](#docker-integration)  
+- [Continuous Integration (CI)](#continuous-integration-ci)  
+- [Future Enhancements](#future-enhancements)  
 
+---
 
+## 🚀 Project Overview  
 
+This project integrates **traditional CPU scheduling algorithms** with **Artificial Intelligence (AI) optimization techniques** to improve process scheduling in operating systems.  
 
+It includes:  
 
+✅ **Classical Scheduling Methods** (FCFS, Round Robin, Priority Scheduling, Shortest Job First).  
+✅ **AI-Based Scheduling Enhancements** using **Genetic Algorithms (GA)** and **Reinforcement Learning (Q-learning)**.  
+✅ **Data-Driven Performance Analysis**, including visualizations and performance metrics such as turnaround time, waiting time, and CPU utilization.  
+✅ **Containerized Deployment** using **Docker** for consistent execution across environments.  
+✅ **Automated Testing & CI/CD** using **GitHub Actions** to ensure reliability and performance.  
+
+By combining **AI & optimization techniques**, this project enhances process scheduling strategies, making them **intelligent, adaptable, and efficient**.  
+
+---
+
+## 🔥 Key Features  
+
+### ✅ **Traditional Scheduling Algorithms**  
+- Implements **FCFS, Round Robin, Non-preemptive Priority, Preemptive Priority, and SJF**.  
+
+### ✅ **AI Optimization with Genetic Algorithms (GA)**  
+- **Single-objective GA:** Minimizes **average waiting time**.  
+- **Multi-objective GA:** Balances **waiting time** and **turnaround time** using a **weighted optimization approach**.  
+
+### ✅ **Reinforcement Learning (Q-learning) for Scheduling**  
+- AI learns **optimal scheduling strategies** dynamically based on **reward-based learning**.  
+
+### ✅ **Performance Visualization**  
+- Generates **Gantt charts** to illustrate process execution.  
+
+### ✅ **CSV-Based Result Logging**  
+- Outputs performance metrics in CSV for further evaluation.  
+
+### ✅ **Docker Integration**  
+- Ensures **consistent execution** across different systems.  
+
+### ✅ **Automated Testing & CI/CD**  
+- GitHub Actions validates updates and prevents regressions.  
+
+---
+
+## 🤖 Technical Approach  
+
+### 🔹 **Classical Scheduling Algorithms**  
+This project implements various **traditional CPU scheduling techniques**, including:  
+
+- **FCFS (First-Come, First-Served):** Executes processes in the order they arrive.  
+- **Round Robin (RR):** Time-sliced execution for fair process scheduling.  
+- **Non-Preemptive Priority Scheduling:** Processes execute based on priority.  
+- **Preemptive Priority Scheduling:** Higher-priority processes can interrupt lower-priority processes.  
+- **Shortest Job First (SJF):** Selects the shortest burst time for better efficiency.  
+
+---
+
+### 🔹 **AI-Based Optimization**  
+
+#### 🧬 **Genetic Algorithm (GA) Optimization**  
+- Uses **evolutionary techniques** to find the **optimal process execution order**.  
+- Implements both **single-objective** (waiting time minimization) and **multi-objective** (balancing waiting & turnaround time).  
+
+#### 🏆 **Reinforcement Learning (Q-learning) Optimization**  
+- AI dynamically learns the best scheduling sequence.  
+- The **Q-learning model** is trained to **reduce waiting time** through reward-based decision-making.  
+
+---
+
+### 🔹 **Performance Metrics & Analysis**  
+- **Average Waiting Time:** Measures idle duration before process execution.  
+- **Turnaround Time:** Measures total time from arrival to completion.  
+- **CPU Utilization:** Evaluates efficiency of CPU usage.  
+- **Throughput:** Calculates the number of completed processes per unit time.  
+- **Gantt Charts:** Graphical representation of scheduling execution sequences.  
+
+---
+
+## 📂 Project Structure  
 
