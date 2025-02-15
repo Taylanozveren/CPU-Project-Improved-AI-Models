@@ -58,3 +58,5 @@ The project is implemented in Python using key libraries such as NumPy, Matplotl
 
 ## Project Structure
 
+cpu_scheduler_project/ ├─ README.md # This detailed project documentation. ├─ requirements.txt # Python dependencies: matplotlib, numpy, pandas. ├─ Dockerfile # Docker configuration for containerization. ├─ .github/ │ └─ workflows/ │ └─ ci.yml # GitHub Actions workflow for CI/CD. ├─ scheduler.py # Implementation of CPU scheduling algorithms. ├─ metrics.py # Functions to calculate performance metrics. ├─ demo_algorithms.py # Script for demonstrating scheduling algorithms and visualizations. ├─ optimizer.py # Genetic Algorithm implementations for scheduling optimization. ├─ advanced_ai.py # Q-learning based Reinforcement Learning demonstration. ├─ main.py # Main script orchestrating demos, GA, RL, and result logging. └─ results/ # Folder for output CSV files containing simulation results.
+
