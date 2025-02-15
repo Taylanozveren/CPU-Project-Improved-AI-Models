@@ -76,6 +76,7 @@ pip install -r requirements.txt
 python main.py
 ```
 
+*****************************************************************************************************************************
 Docker Integration
 To run the project within a Docker container:
 
@@ -86,6 +87,8 @@ docker build -t cpu_scheduler:latest .
 Run the Docker Container:
 
 docker run --rm cpu_scheduler:latest
+*****************************************************************************************************************************
+
 
 Continuous Integration (CI)
 A GitHub Actions workflow is set up in .github/workflows/ci.yml to automatically install dependencies and run the main script on every push or pull request, ensuring continuous integration and testing.
