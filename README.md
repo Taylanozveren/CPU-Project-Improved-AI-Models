@@ -60,8 +60,8 @@ Throughput: Calculates the number of completed processes per unit time.
 Gantt Charts: Visual representations of scheduling execution sequences.
 📂 Project Structure
 plaintext
-Kopyala
-Düzenle
+
+
 cpu_scheduler_project/
 ├── README.md              # Project documentation and usage guide
 ├── requirements.txt       # List of required Python dependencies
@@ -74,71 +74,61 @@ cpu_scheduler_project/
 ├── advanced_ai.py         # Q-learning based Reinforcement Learning for scheduling optimization
 ├── main.py                # Runs all demos, AI optimizations, and logs results
 └── results/               # Stores CSV files with performance data
+
+
 ⚡ Installation
 1️⃣ Clone the Repository:
 
-bash
-Kopyala
-Düzenle
+
 git clone https://github.com/Taylanozveren/CPU-Project-Improved-AI-Models.git
 cd CPU-Project-Improved-AI-Models
 2️⃣ Set Up a Virtual Environment (Recommended):
 
 Windows:
 
-bash
-Kopyala
-Düzenle
+
 python -m venv venv
 venv\Scripts\activate
+
+
 Linux/Mac:
 
-bash
-Kopyala
-Düzenle
+
 python3 -m venv venv
 source venv/bin/activate
-3️⃣ Upgrade pip, setuptools, and wheel:
 
-bash
-Kopyala
-Düzenle
+3️⃣ Upgrade pip, setuptools, and weel:
 venv\Scripts\python.exe -m pip install --upgrade pip setuptools wheel
-4️⃣ Install Required Dependencies:
 
-bash
-Kopyala
-Düzenle
+4️⃣ Install Required Dependencies:
 pip install -r requirements.txt
+
+
 🛠 Usage
 Run the main script to execute scheduling algorithms, AI-based optimizations, and generate reports.
-
-bash
-Kopyala
-Düzenle
 python main.py
+
 📊 Expected Outputs:
+
 Terminal output displaying scheduling orders, performance metrics, and comparisons.
 Gantt Charts for each algorithm.
 CSV File Output: Results saved in results/final_results.csv.
+
+
 🐳 Docker Integration
 To run the project inside a Docker container for consistent execution:
 
 1️⃣ Build the Docker Image:
-
-bash
-Kopyala
-Düzenle
 docker build -t cpu_scheduler:latest .
-2️⃣ Run the Container:
 
-bash
-Kopyala
-Düzenle
+2️⃣ Run the Container:
 docker run --rm cpu_scheduler:latest
+
 🔄 Continuous Integration (CI)
 A GitHub Actions workflow (.github/workflows/ci.yml) automates dependency installation & testing on each code push.
 Ensures code stability by verifying scheduling algorithms and AI optimization models.
+
+
 🚀 Future Enhancements
 ✅ Advanced Reinforcement Learning: Improve Q-learning models with deeper state-action space.
 ✅ Real-Time & Multi-Core Scheduling: Extend scheduling strategies to support multi-core CPU environments.
@@ -147,10 +137,6 @@ Ensures code stability by verifying scheduling algorithms and AI optimization mo
 
 This project bridges OS fundamentals with AI-driven optimization, providing a robust framework for intelligent CPU scheduling strategies. 🎯
 
-yaml
-Kopyala
-Düzenle
-
 ---
 
 ### 🔹 **Key Improvements in this README**  
@@ -158,8 +144,6 @@ Düzenle
 ✅ **Stronger AI & Data Science Explanation:** Highlights how Genetic Algorithms and Q-learning optimize scheduling.  
 ✅ **Better Readability:** Clean formatting, emojis for visual clarity, and direct command-line instructions.  
 ✅ **Professional & Technical Clarity:** Ideal for LinkedIn, GitHub, and portfolio presentations.  
-
-Bu README, projenizi **LinkedIn’de veya bir teknik CV’de** güçlü ve etkileyici şekilde sergilemenize yardımcı olacaktır. 🚀🔥
 
 
 
