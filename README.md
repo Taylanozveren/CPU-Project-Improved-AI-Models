@@ -96,17 +96,17 @@ This project implements various **traditional CPU scheduling techniques**, inclu
 
 ## 📂 Project Structure  
 
-README.md → Project documentation and usage guide explaining all components.
-requirements.txt → List of required Python dependencies such as NumPy, Pandas, and Matplotlib.
-Dockerfile → Configuration file to containerize the project for consistent execution.
-.github/workflows/ci.yml → GitHub Actions workflow for automated testing and CI/CD pipeline.
-scheduler.py → Implements classical CPU scheduling algorithms like FCFS, Round Robin, Priority, SJF, and Preemptive Priority.
-metrics.py → Provides functions to calculate performance metrics such as waiting time, turnaround time, and CPU utilization.
-demo_algorithms.py → Demonstrates scheduling algorithms with sample data and generates Gantt chart visualizations.
-optimizer.py → Implements Genetic Algorithm (GA) optimization for scheduling with both single-objective and multi-objective approaches.
-advanced_ai.py → Introduces a Q-learning based Reinforcement Learning model to optimize scheduling dynamically.
-main.py → The core script that executes all scheduling algorithms, AI-based optimizations, and logs the results.
-results/ → A directory that stores CSV files containing performance evaluation data for analysis.
+- README.md → Project documentation and usage guide explaining all components.
+- requirements.txt → List of required Python dependencies such as NumPy, Pandas, and Matplotlib.
+- Dockerfile → Configuration file to containerize the project for consistent execution.
+- .github/workflows/ci.yml → GitHub Actions workflow for automated testing and CI/CD pipeline.
+- scheduler.py → Implements classical CPU scheduling algorithms like FCFS, Round Robin, Priority, SJF, and Preemptive Priority.
+- metrics.py → Provides functions to calculate performance metrics such as waiting time, turnaround time, and CPU utilization.
+- demo_algorithms.py → Demonstrates scheduling algorithms with sample data and generates Gantt chart visualizations.
+- optimizer.py → Implements Genetic Algorithm (GA) optimization for scheduling with both single-objective and multi-objective approaches.
+- advanced_ai.py → Introduces a Q-learning based Reinforcement Learning model to optimize scheduling dynamically.
+- main.py → The core script that executes all scheduling algorithms, AI-based optimizations, and logs the results.
+- results/ → A directory that stores CSV files containing performance evaluation data for analysis.
 
 
 ## ⚡ Installation  
