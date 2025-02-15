@@ -59,21 +59,20 @@ This project integrates advanced CPU scheduling algorithms with modern AI techni
 ```bash
 
 
-A.)
    ```bash
 python -m venv venv
 venv\Scripts\activate
 
 
-B.)
+
 venv\Scripts\python.exe -m pip install --upgrade pip setuptools wheel
 
 
-C.)
+
 pip install -r requirements.txt
 
 
-D.)
+
 python main.py
 ```
 
