@@ -99,13 +99,12 @@ This project implements various **traditional CPU scheduling techniques**, inclu
 cpu_scheduler_project/ ├── README.md # Project documentation and usage guide ├── requirements.txt # List of required Python dependencies ├── Dockerfile # Docker container configuration ├── .github/workflows/ci.yml # GitHub Actions workflow for CI/CD ├── scheduler.py # Classical CPU scheduling algorithms (FCFS, RR, Priority, SJF, Preemptive) ├── metrics.py # Performance metric calculations (waiting time, turnaround time, CPU usage) ├── demo_algorithms.py # Scheduling demonstrations + Gantt chart visualization ├── optimizer.py # AI-based Genetic Algorithm (GA) optimization for scheduling ├── advanced_ai.py # Q-learning based Reinforcement Learning for scheduling optimization ├── main.py # Runs all demos, AI optimizations, and logs results └── results/ # Stores CSV files with performance data
 
 
----
 
 ## ⚡ Installation  
-
+```bash
 ### 1️⃣ **Clone the Repository**  
 
-```bash
+
 git clone https://github.com/Taylanozveren/CPU-Project-Improved-AI-Models.git
 cd CPU-Project-Improved-AI-Models
 2️⃣ Set Up a Virtual Environment (Recommended)
@@ -144,14 +143,14 @@ docker run --rm cpu_scheduler:latest
 🔄 Continuous Integration (CI)
 GitHub Actions workflow (.github/workflows/ci.yml) automates dependency installation and testing on every push.
 Ensures code stability by verifying scheduling algorithms and AI optimization models.
+```
+
+
 🚀 Future Enhancements
 ✅ Advanced Reinforcement Learning: Improve Q-learning models with deeper state-action space.
 ✅ Real-Time & Multi-Core Scheduling: Extend scheduling strategies to support multi-core CPU environments.
 ✅ Hybrid AI Models: Combine Genetic Algorithms & RL for intelligent process scheduling.
 ✅ Cloud Integration: Deploy as a cloud-based API for dynamic scheduling optimization.
-
-🏆 Final Thoughts
-This project bridges OS fundamentals with AI-driven optimization, providing a robust framework for intelligent CPU scheduling strategies. 🚀🔥
 
 
 
