@@ -59,6 +59,7 @@ This project integrates advanced CPU scheduling algorithms with modern AI techni
 
 
 A.)
+```bash
 python -m venv venv
 venv\Scripts\activate
 
