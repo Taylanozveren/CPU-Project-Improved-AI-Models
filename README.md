@@ -13,53 +13,62 @@ Docker Integration
 Continuous Integration (CI)
 Future Enhancements
 🚀 Project Overview
-This project combines traditional CPU scheduling algorithms with Artificial Intelligence (AI) optimization techniques to improve process scheduling in operating systems. The implementation includes:
+This project integrates traditional CPU scheduling algorithms with Artificial Intelligence (AI) optimization techniques to improve process scheduling in operating systems.
 
-Classical Scheduling Methods (e.g., FCFS, Round Robin, Priority Scheduling, Shortest Job First).
+It includes:
+
+Classical Scheduling Methods (FCFS, Round Robin, Priority Scheduling, Shortest Job First).
 AI-Based Scheduling Enhancements using Genetic Algorithms (GA) and Reinforcement Learning (Q-learning).
-Data-Driven Performance Analysis, including visualizations and performance metrics (e.g., turnaround time, waiting time, CPU utilization).
-Containerized Deployment using Docker for easy execution and compatibility.
-Automated Testing & CI/CD using GitHub Actions to ensure reliability.
-By leveraging AI & optimization techniques, this project aims to enhance process scheduling strategies in an intelligent, adaptable, and efficient manner.
+Data-Driven Performance Analysis, including visualizations and performance metrics such as turnaround time, waiting time, and CPU utilization.
+Containerized Deployment using Docker for consistent execution across environments.
+Automated Testing & CI/CD using GitHub Actions to ensure reliability and performance.
+By combining AI & optimization techniques, this project enhances process scheduling strategies, making them intelligent, adaptable, and efficient.
 
 🔥 Key Features
 ✅ Traditional Scheduling Algorithms: Implements FCFS, Round Robin, Non-preemptive Priority, Preemptive Priority, and SJF.
-✅ AI Optimization with Genetic Algorithms (GA): Uses single-objective (minimizing waiting time) and multi-objective (optimizing waiting + turnaround time).
-✅ Reinforcement Learning (Q-learning) for Scheduling: AI learns to optimize scheduling order dynamically.
-✅ Visual Performance Analysis: Generates Gantt charts to visualize process execution.
-✅ CSV-Based Result Logging: Performance metrics are stored in CSV for further evaluation.
-✅ Docker Integration: Containerized execution ensures a consistent environment across different systems.
-✅ Automated Testing & CI/CD: GitHub Actions validates updates and prevents regressions.
 
+✅ AI Optimization with Genetic Algorithms (GA):
+
+Single-objective GA: Minimizes average waiting time.
+Multi-objective GA: Balances waiting time and turnaround time using a weighted optimization approach.
+✅ Reinforcement Learning (Q-learning) for Scheduling:
+
+AI learns optimal scheduling strategies dynamically based on reward-based learning.
+✅ Performance Visualization:
+
+Generates Gantt charts to illustrate process execution.
+✅ CSV-Based Result Logging:
+
+Outputs performance metrics in CSV for further evaluation.
+✅ Docker Integration:
+
+Ensures consistent execution across different systems.
+✅ Automated Testing & CI/CD:
+
+GitHub Actions validates updates and prevents regressions.
 🤖 Technical Approach
-This project integrates traditional operating system scheduling with modern AI techniques:
-
 🔹 Classical Scheduling Algorithms
-These are implemented as baseline comparisons:
+This project implements various traditional CPU scheduling techniques, including:
 
-FCFS (First-Come, First-Served): Simple queue-based execution.
-Round Robin (RR): Time-sliced execution for fairness.
-Non-Preemptive Priority Scheduling: Processes execute based on priority levels.
-Preemptive Priority Scheduling: Higher-priority processes preempt running processes.
-Shortest Job First (SJF): Selects the shortest burst time for efficiency.
+FCFS (First-Come, First-Served): Executes processes in the order they arrive.
+Round Robin (RR): Time-sliced execution for fair process scheduling.
+Non-Preemptive Priority Scheduling: Processes execute based on priority.
+Preemptive Priority Scheduling: Higher-priority processes can interrupt lower-priority processes.
+Shortest Job First (SJF): Selects the shortest burst time for better efficiency.
 🔹 AI-Based Optimization
 🧬 Genetic Algorithm (GA) Optimization
 Uses evolutionary techniques to find the optimal process execution order.
-Single-objective GA: Minimizes average waiting time.
-Multi-objective GA: Balances waiting time and turnaround time using a weighted optimization approach.
+Implements both single-objective (waiting time minimization) and multi-objective (balancing waiting & turnaround time).
 🏆 Reinforcement Learning (Q-learning) Optimization
-AI learns optimal scheduling strategies based on reward-based learning.
-State representation: Remaining processes & execution time.
-Action space: Selecting the next process to execute.
-Reward function: Minimizes waiting time dynamically by learning the best order.
+AI dynamically learns the best scheduling sequence.
+The Q-learning model is trained to reduce waiting time through reward-based decision-making.
 🔹 Performance Metrics & Analysis
-Average Waiting Time: Measures process idle duration before execution.
+Average Waiting Time: Measures idle duration before process execution.
 Turnaround Time: Measures total time from arrival to completion.
-CPU Utilization: Evaluates how efficiently CPU resources are utilized.
+CPU Utilization: Evaluates efficiency of CPU usage.
 Throughput: Calculates the number of completed processes per unit time.
-Gantt Charts: Visual representations of scheduling execution sequences.
-📂 Project Structure
-plaintext
+Gantt Charts: Graphical representation of scheduling execution sequences.
+
 
 
 cpu_scheduler_project/
