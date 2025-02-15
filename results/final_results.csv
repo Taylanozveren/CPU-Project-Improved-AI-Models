@@ -1,0 +1,4 @@
+Algorithm,Schedule,AvgWaitingTime
+GA_Single,"[3, 2, 1, 4]",4.0
+GA_Multi,"[3, 2, 1, 4]",4.0
+RL,"[3, 2, 4, 1]",4.25
